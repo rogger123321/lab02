@@ -1,0 +1,23 @@
+<div class="login-div">
+    <h1>Login</h1>
+    <p>
+        Login
+        <mat-form-field appearance="fill">
+          <mat-label>Usaurio</mat-label>
+          <input matInput placeholder="Usuario">
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Contraseña">
+            <mat-icon matSuffix>password</mat-icon>
+        </mat-form-field>
+
+      </p>
+      <p class="button">
+        <button mat-flat-button>salir</button>
+        <button mat-flat-button (click)="irAHome()">Ingresar</button>
+
+    </p>
+</div>
+

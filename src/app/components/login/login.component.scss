@@ -1,0 +1,55 @@
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Contenedor del formulario de login */
+.login-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta el div al centro exacto */
+    
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 300px; /* Tamaño fijo para el formulario */
+}
+
+/* Estilos de los campos de entrada (sin afectar el fondo) */
+mat-form-field {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin-bottom: 15px; /* Espaciado entre los campos */
+    background-color: transparent; /* Mantiene el fondo original */
+}
+
+/* Estilos de los botones */
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button button {
+    background-color: #007bff; /* Azul para los botones */
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 48%; /* Para que ocupen la mitad del ancho */
+    transition: background 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
